@@ -1,7 +1,7 @@
 SafetyNet offline/online attestation library
 ===============================
 * **PHP version:** 7.4+
-* **Packagist:** [gorokhovdv/safetynet-verification](https://packagist.org/packages/gorokhovdv/safetynet-verification) [![Total Downloads](https://poser.pugx.org/gorokhovdv/safetynetattestation/downloads.png)](https://packagist.org/packages/gorokhovdv/safetynetattestation)
+* **Packagist:** [gorokhovdv/safetynet-verification](https://packagist.org/packages/gorokhovdv/safetynet-verification) [![Total Downloads](https://poser.pugx.org/gorokhovdv/safetynet-verification/downloads.png)](https://packagist.org/packages/gorokhovdv/safetynet-verification)
 * **Composer:** `composer require gorokhovdv/safetynetattestation`
 
 ***
