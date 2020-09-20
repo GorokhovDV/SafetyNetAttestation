@@ -1,7 +1,7 @@
 SafetyNet offline/online attestation library
 ===============================
 * **PHP version:** 7.4+
-* **Packagist:** [gorokhovdv/safetynetattestation](https://packagist.org/packages/gorokhovdv/safetynetattestation) [![Total Downloads](https://poser.pugx.org/gorokhovdv/safetynetattestation/downloads.png)](https://packagist.org/packages/gorokhovdv/safetynetattestation)
+* **Packagist:** [gorokhovdv/safetynet-verification](https://packagist.org/packages/gorokhovdv/safetynet-verification) [![Total Downloads](https://poser.pugx.org/gorokhovdv/safetynetattestation/downloads.png)](https://packagist.org/packages/gorokhovdv/safetynetattestation)
 * **Composer:** `composer require gorokhovdv/safetynetattestation`
 
 ***
@@ -12,7 +12,7 @@ SafetyNet offline/online attestation library
 
 If you use composer in your project then you can to install SafetyNetAttestation as package.
 
-`composer require gorokhovdv/safetynetattestation`
+`composer require gorokhovdv/safetynet-verification`
 
 ### Example for online verification
 
