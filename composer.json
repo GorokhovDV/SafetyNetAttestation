@@ -1,0 +1,22 @@
+{
+    "name": "gorokhovdv/safetynet-verification",
+    "description": "Smart (Online/Offline) SafetyNet verification",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Denis Gorokhov",
+            "email": "denis@gorokhov.su"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "myclabs/php-enum": "dev-master",
+        "firebase/php-jwt": "^5.0",
+        "phpseclib/phpseclib": "^2.0.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "SafetyNet\\": "src/"
+        }
+    }
+}
