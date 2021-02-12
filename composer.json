@@ -2,6 +2,7 @@
     "name": "gorokhovdv/safetynet-verification",
     "description": "Smart (Online/Offline) SafetyNet verification",
     "type": "library",
+    "license": "MIT",
     "authors": [
         {
             "name": "Denis Gorokhov",

@@ -10,7 +10,7 @@ SafetyNet offline/online attestation library
 
 ### Install
 
-If you use composer in your project then you can to install SafetyNetAttestation as package.
+If you use composer in your project then you can install SafetyNetAttestation as package.
 
 `composer require gorokhovdv/safetynet-verification`
 

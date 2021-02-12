@@ -3,9 +3,6 @@
 namespace SafetyNet\Verifier;
 
 use Firebase\JWT\JWT;
-use SafetyNet\Statement\StatementHeader;
-use SafetyNet\Verifier\Exception\CertificateChainError;
-use SafetyNet\Verifier\Exception\CertificateHostnameError;
 use SafetyNet\Verifier\Exception\CheckSignatureException;
 use SafetyNet\Statement\Statement;
 
