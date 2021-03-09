@@ -22,13 +22,13 @@ class RootGoogleCertService
             return $certificate;
         }
 
-        $certificate = self::findInLocalBundle();
-
-        if (!empty($certificate)) {
-            return $certificate;
+        try {
+            $certificate = self::findInLocalBundle();
+        } catch (RootCertificateError $exception) {
+            $certificate = self::getCertificateFromGoogle();
         }
 
-        return $certificate = self::getCertificateFromGoogle();
+        return $certificate;
     }
 
     private static function findInLocalBundle(): ?string
@@ -56,7 +56,7 @@ class RootGoogleCertService
             }
         }
 
-        return null;
+        throw new RootCertificateError('Local certificate bundle is unavailable');
     }
 
     private static function saveToLocalCache(string $rawCert): void

@@ -13,7 +13,8 @@
     "require": {
         "myclabs/php-enum": "dev-master",
         "firebase/php-jwt": "^5.0",
-        "phpseclib/phpseclib": "^2.0.4"
+        "phpseclib/phpseclib": "^2.0.4",
+        "ext-openssl": "*"
     },
     "autoload": {
         "psr-4": {
