@@ -72,7 +72,8 @@ abstract class Verifier
             && $this->guardDeviceIsNotRooted($body)
             && $this->guardTimestamp($body)
             && $this->guardApkCertificateDigestSha256($body)
-            && $this->guardApkPackageName($body);
+            && $this->guardApkPackageName($body)
+            && $this->guardHardwareBacked($body);
     }
 
     private function guardNonce(Nonce $nonce, StatementBody $statementBody): bool
@@ -151,5 +152,11 @@ abstract class Verifier
         }
 
         return true;
+    }
+
+    private function guardHardwareBacked(StatementBody $statementBody): bool
+    {
+        return !$this->config->getHardwareBacked()
+            || in_array('HARDWARE_BACKED',explode(',',$statementBody->getEvaluationType()),true)!==false;
     }
 }

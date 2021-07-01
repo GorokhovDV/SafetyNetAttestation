@@ -11,12 +11,14 @@ class Config
     const VERIFIER_CERTIFICATE_DIGEST_SHA256 = 'apkCertificateDigestSha256';
     const VERIFIER_PACKAGE_NAME = 'apkPackageName';
     const VERIFIER_API_KEY = 'apiKey';
+    const VERIFIER_HARDWARE_BACKED = 'hardwareBacked';
 
     private VerifierType $verifierType;
     private int $timestampDiffMS = 10 * 60 * 60 * 1000;
     private array $apkCertificateDigestSha256 = [];
     private array $apkPackageName = [];
     private string $apiKey;
+    private bool $hardwareBacked = false;
 
     public function __construct(array $configOptions)
     {
@@ -63,4 +65,11 @@ class Config
     {
         return $this->apiKey;
     }
+
+    public function getHardwareBacked(): bool
+    {
+        return $this->hardwareBacked;
+    }
+
+
 }

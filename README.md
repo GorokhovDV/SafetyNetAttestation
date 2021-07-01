@@ -38,6 +38,7 @@ try {
         Config::VERIFIER_CERTIFICATE_DIGEST_SHA256 => ['SHA-256-FINGERPRINT'],
         Config::VERIFIER_PACKAGE_NAME => ['APK-NAME-FOR-TEST'],
         Config::VERIFIER_API_KEY => 'GOOGLE-API-KEY',
+        Config::VERIFIER_HARDWARE_BACKED => true,
     ]);
 
     $attestation = new Attestation($attestationConfig);
@@ -75,6 +76,7 @@ try {
         Config::VERIFIER_TIMESTAMP_DIFF => 10 * 60 * 1000,
         Config::VERIFIER_CERTIFICATE_DIGEST_SHA256 => ['SHA-256-FINGERPRINT'],
         Config::VERIFIER_PACKAGE_NAME => ['APK-NAME-FOR-TEST'],
+        Config::VERIFIER_HARDWARE_BACKED => true,
     ]);
 
     $attestation = new Attestation($attestationConfig);
