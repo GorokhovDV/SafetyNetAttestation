@@ -13,6 +13,7 @@ class StatementBody
     private bool $ctsProfileMatch;
     private array $apkCertificateDigestSha256;
     private bool $basicIntegrity;
+    private string $evaluationType;
 
     public function __construct(array $body)
     {
@@ -66,5 +67,10 @@ class StatementBody
     public function getApkCertificateDigestSha256(): array
     {
         return $this->apkCertificateDigestSha256;
+    }
+
+    public function getEvaluationType(): string
+    {
+        return $this->evaluationType;
     }
 }
